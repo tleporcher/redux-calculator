@@ -2,13 +2,13 @@ import React from "react";
 import "./App.css";
 
 import Keyboard from "./Keyboard";
-import Operation from "../containers/Operation";
+import OperationLabel from "../containers/OperationLabel";
 import ResultLabel from "../containers/ResultLabel";
 
 const App = () => (
   <div className="App">
-    <div className="App-header">
-      <Operation />
+    <div className="header">
+      <OperationLabel />
       <ResultLabel />
     </div>
     <Keyboard />

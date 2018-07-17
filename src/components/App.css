@@ -2,19 +2,35 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 33%;
+  margin: auto;
 }
 
-.App-header {
-  height: 3em;
-}
-
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+.header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 1em;
 }
 
 .output {
-  margin: 0 1em;
-  padding: 0 1em;
   border: 1px solid black;
+  min-width: 41%;
+  padding: 0 1em;
+}
+
+.compute-button {
+  width: 100%;
+  padding: 1em 2em;
+}
+
+.keyboard {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1em;
+}
+
+.C-operator {
+  grid-column: 1/5;
 }
